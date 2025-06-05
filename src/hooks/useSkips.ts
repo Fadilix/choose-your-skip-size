@@ -6,17 +6,17 @@ const useSkips = () => {
 
     const fetchSkips = async (): Promise<Skip[]> => {
         const response = await fetch(link);
-        
+
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        
+
         const data = await response.json();
-        
+
         if (!Array.isArray(data)) {
             throw new Error('Invalid API response format');
         }
-        
+
         return data;
     };
 

@@ -29,9 +29,8 @@ export function ProgressSteps({ currentStep, onNext, onPrevious, hasSelectedSkip
                     currentStep={currentStep}
                   />
                   {index < STEPS.length - 1 && (
-                    <div className={`w-8 lg:w-16 xl:w-24 h-0.5 mx-2 lg:mx-4 ${
-                      index < currentStep ? "bg-emerald-500" : "bg-gray-200"
-                    }`} />
+                    <div className={`w-8 lg:w-16 xl:w-24 h-0.5 mx-2 lg:mx-4 ${index < currentStep ? "bg-emerald-500" : "bg-gray-200"
+                      }`} />
                   )}
                 </motion.div>
               ))}

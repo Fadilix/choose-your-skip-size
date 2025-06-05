@@ -3,21 +3,13 @@ import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react"
 import { Button } from "../ui/button"
 import { Card } from "../ui/card"
 import type { Skip } from "../../interfaces"
+import { formatPrice } from "../../utils"
 
 interface SkipConfirmationProps {
   skip: Skip | null
   onBack: () => void
   onContinue: () => void
 }
-
-const formatPrice = (price: number) => {
-  return new Intl.NumberFormat('en-GB', {
-    style: 'currency',
-    currency: 'GBP',
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(price);
-};
 
 export function SkipConfirmation({ skip, onBack, onContinue }: SkipConfirmationProps) {
   if (!skip) return null;

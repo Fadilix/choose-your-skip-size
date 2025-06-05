@@ -13,8 +13,7 @@ interface MainContentProps {
 export function MainContent({ selectedSkipId, onSelectSkip, onDeselectSkip }: MainContentProps) {
   const { data: skips } = useSkips();
   const selectedSkip = skips?.find((skip) => skip.id.toString() === selectedSkipId)
-  
-  // Toggle function that will select or deselect the skip
+
   const handleToggleSkip = (skipId: string) => {
     if (selectedSkipId === skipId) {
       onDeselectSkip();
@@ -24,9 +23,8 @@ export function MainContent({ selectedSkipId, onSelectSkip, onDeselectSkip }: Ma
   };
 
   const handleContinue = () => {
-    // This would navigate to the next step or process the selection
     if (selectedSkip) {
-      // Process the selected skip
+      // TODO: Process the selected skip
     }
   };
 
@@ -40,7 +38,7 @@ export function MainContent({ selectedSkipId, onSelectSkip, onDeselectSkip }: Ma
               onSelectSkip={handleToggleSkip}
               selectedSkipId={selectedSkipId}
             />
-            
+
             {selectedSkip && (
               <div className="mt-8">
                 <SkipConfirmation
