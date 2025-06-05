@@ -2,8 +2,8 @@
 ![image](https://github.com/user-attachments/assets/8bf65121-09cd-401e-853a-263ca026d510)
 
 ## Explaining my approach
-First, i thought about the user experience. When seeing the initial page there were no navbar and no footer, so there is nothing to prove that the website is legit.
-- I added the navbar
+First, i thought about the UX (User eXperience). When seeing the initial page there were no navbar and no footer, so there is nothing to prove that the website is legit or to know for what company the website is for.
+- I added the navbar (added the company name in the navbar at the left)
 - I added the footer with newsletter subscription (we can use that for email and digital marketing) and different policies to make sure the user feels safe and continue his order in peace
 
 Then i also noticed when scrolling the user can easily lose track of the steps
