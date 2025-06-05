@@ -51,7 +51,7 @@ export function SkipCard({ skip, index, isSelected, onSelect }: SkipCardProps) {
             {!isRoadAllowed && (
               <div className="absolute top-6 right-6 bg-red-500 text-white px-5 py-2 rounded-full text-sm font-medium shadow-lg flex items-center space-x-2">
                 <AlertCircle className="w-5 h-5" />
-                <span>Road Permit Required</span>
+                <span>Not allowed on the road</span>
               </div>
             )}
 
