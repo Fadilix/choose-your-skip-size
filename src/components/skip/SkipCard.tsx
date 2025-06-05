@@ -111,8 +111,8 @@ export function SkipCard({ skip, index, isSelected, onSelect }: SkipCardProps) {
                 onSelect();
               }}
               className={`w-full rounded-lg py-5 text-base font-semibold ${isSelected
-                  ? 'bg-emerald-100 text-emerald-700 border-2 border-emerald-500'
-                  : 'bg-emerald-500 text-white border-0'
+                ? 'bg-emerald-100 text-emerald-700 border-2 border-emerald-500'
+                : 'bg-emerald-500 text-white border-0'
                 }`}
               variant="outline"
             >

@@ -3,7 +3,7 @@ import { motion } from "motion/react"
 
 export function BenefitsSection() {
   return (
-    <motion.div 
+    <motion.div
       className="mt-16 bg-white rounded-2xl p-8 shadow-sm border border-emerald-100"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}

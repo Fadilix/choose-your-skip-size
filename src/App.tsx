@@ -7,6 +7,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "./components/ui/button";
 import { motion, AnimatePresence } from "motion/react";
 import useSkips from "./hooks/useSkips";
+import { formatPrice } from "./utils";
 
 export default function App() {
   const [selectedSkipId, setSelectedSkipId] = useState<string | null>(null);
@@ -32,15 +33,6 @@ export default function App() {
     if (currentStep > 0) {
       setCurrentStep(currentStep - 1);
     }
-  };
-
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('en-GB', {
-      style: 'currency',
-      currency: 'GBP',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0,
-    }).format(price);
   };
 
   return (

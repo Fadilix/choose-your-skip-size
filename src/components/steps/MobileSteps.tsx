@@ -60,23 +60,20 @@ export function MobileSteps({
               return (
                 <div
                   key={index}
-                  className={`flex items-center space-x-3 ${
-                    index === currentStep ? "text-emerald-600" : "text-gray-500"
-                  }`}
+                  className={`flex items-center space-x-3 ${index === currentStep ? "text-emerald-600" : "text-gray-500"
+                    }`}
                 >
-                  <div className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${
-                    index < currentStep
+                  <div className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${index < currentStep
                       ? "bg-emerald-500 border-emerald-500"
                       : index === currentStep
-                      ? "border-emerald-500"
-                      : "border-gray-200"
-                  }`}>
+                        ? "border-emerald-500"
+                        : "border-gray-200"
+                    }`}>
                     {index < currentStep ? (
                       <CheckCircle2 className="w-5 h-5 text-white" />
                     ) : (
-                      <StepIcon className={`w-4 h-4 ${
-                        index === currentStep ? "text-emerald-500" : "text-gray-400"
-                      }`} />
+                      <StepIcon className={`w-4 h-4 ${index === currentStep ? "text-emerald-500" : "text-gray-400"
+                        }`} />
                     )}
                   </div>
                   <span className="font-medium">{step.label}</span>
