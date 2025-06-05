@@ -3,6 +3,7 @@ import { Button } from "../ui/button"
 import { Card, CardContent } from "../ui/card"
 import { motion } from "motion/react"
 import type { Skip } from "../../interfaces"
+import { formatPrice } from "../../utils"
 
 
 interface SkipCardProps {
@@ -11,15 +12,6 @@ interface SkipCardProps {
   isSelected: boolean
   onSelect: () => void
 }
-
-const formatPrice = (price: number) => {
-  return new Intl.NumberFormat('en-GB', {
-    style: 'currency',
-    currency: 'GBP',
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(price);
-};
 
 export function SkipCard({ skip, index, isSelected, onSelect }: SkipCardProps) {
   const isRoadAllowed = skip.allowed_on_road;
@@ -118,11 +110,10 @@ export function SkipCard({ skip, index, isSelected, onSelect }: SkipCardProps) {
                 e.stopPropagation();
                 onSelect();
               }}
-              className={`w-full rounded-lg py-5 text-base font-semibold ${
-                isSelected
+              className={`w-full rounded-lg py-5 text-base font-semibold ${isSelected
                   ? 'bg-emerald-100 text-emerald-700 border-2 border-emerald-500'
                   : 'bg-emerald-500 text-white border-0'
-              }`}
+                }`}
               variant="outline"
             >
               {isSelected ? (
