@@ -6,12 +6,26 @@ const useSkips = () => {
 
     const fetchSkips = async (): Promise<Skip[]> => {
         const response = await fetch(link);
-        return response.json();
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        
+        if (!Array.isArray(data)) {
+            throw new Error('Invalid API response format');
+        }
+        
+        return data;
     };
 
-    return useQuery({
+    return useQuery<Skip[], Error>({
         queryKey: ['skips'],
-        queryFn: fetchSkips
+        queryFn: fetchSkips,
+        retry: 3,
+        refetchOnWindowFocus: false,
+        staleTime: 5 * 60 * 1000, // 5 minutes
     });
 }
 
