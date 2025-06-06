@@ -1,4 +1,11 @@
-import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from "lucide-react"
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -7,18 +14,30 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-emerald-600">Remwaste</h3>
+            <h3 className="text-xl font-bold text-emerald-600">
+              REM Waste Management
+            </h3>
             <p className="text-gray-600 text-sm">
-              Your trusted partner in waste management solutions. We provide reliable and efficient skip hire services across the UK.
+              Your trusted partner in waste management solutions. We provide
+              reliable and efficient skip hire services across the UK.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-emerald-600 transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-emerald-600 transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-emerald-600 transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-emerald-600 transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-emerald-600 transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-emerald-600 transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -29,22 +48,34 @@ export function Footer() {
             <h3 className="text-lg font-semibold text-gray-900">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors text-sm">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-emerald-600 transition-colors text-sm"
+                >
                   Skip Hire
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors text-sm">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-emerald-600 transition-colors text-sm"
+                >
                   Waste Management
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors text-sm">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-emerald-600 transition-colors text-sm"
+                >
                   Recycling Services
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors text-sm">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-emerald-600 transition-colors text-sm"
+                >
                   About Us
                 </a>
               </li>
@@ -66,8 +97,10 @@ export function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-emerald-600 mt-1" />
                 <span className="text-gray-600 text-sm">
-                  123 Waste Management Way<br />
-                  London, UK<br />
+                  123 Waste Management Way
+                  <br />
+                  London, UK
+                  <br />
                   SW1A 1AA
                 </span>
               </li>
@@ -76,7 +109,9 @@ export function Footer() {
 
           {/* Newsletter */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-900">Stay Updated</h3>
+            <h3 className="text-lg font-semibold text-gray-900">
+              Stay Updated
+            </h3>
             <p className="text-gray-600 text-sm">
               Subscribe to our newsletter for the latest updates and offers.
             </p>
@@ -103,13 +138,22 @@ export function Footer() {
               © {new Date().getFullYear()} Remwaste. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors text-sm">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-emerald-600 transition-colors text-sm"
+              >
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors text-sm">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-emerald-600 transition-colors text-sm"
+              >
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors text-sm">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-emerald-600 transition-colors text-sm"
+              >
                 Cookie Policy
               </a>
             </div>
@@ -117,5 +161,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
-} 
+  );
+}
