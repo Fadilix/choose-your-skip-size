@@ -26,7 +26,8 @@ For better enhancement of the UI i used a more attractive color and font (in my 
 - [ReactJS](https://react.dev/)
   -   JavaScript library, component based for simple and maintainable code
 - [TypeScript](https://www.typescriptlang.org/docs/)
-  -   For the type safety of the app. 
+  -   For the type safety of the app.
+- [Tailwindcss](https://tailwindcss.com)
 - [Shadcn UI](https://ui.shadcn.com/docs/installation)
   -   Components ready to use for the web
 
