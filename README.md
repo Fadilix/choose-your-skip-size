@@ -18,4 +18,16 @@ If the user is lost and want more infos, he has nobody, no email no contact to t
 Talking about the responsiveness of the website
 - The display is responsive, so it is functional and good looking on all screens
 
+For better enhancement of the UI i used a more attractive color and font (in my opinion)
+- I used an emerald ish color and some gradient with a white background
+- I used the Manrope font
+
+## Tech stack
+- [ReactJS](https://react.dev/)
+  -   JavaScript library, component based for simple and maintainable code
+- [TypeScript](https://www.typescriptlang.org/docs/)
+  -   For the type safety of the app. 
+- [Shadcn UI](https://ui.shadcn.com/docs/installation)
+  -   Components ready to use for the web
+
 Overall, i went for a simple, yet effective layout that makes the user experience better, a responsive and good looking web design
