@@ -28,7 +28,7 @@ For better enhancement of the UI i used a more attractive color and font (in my 
 - [TypeScript](https://www.typescriptlang.org/docs/)
   -   For the type safety of the app.
 - [Tailwindcss](https://tailwindcss.com)
-  - To write css code faster 
+  - To write css code simpler and faster
 - [Shadcn UI](https://ui.shadcn.com/docs/installation)
   -   Components ready to use for the web
 
